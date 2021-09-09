@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <script src="./models/rocket.js"></script>
+    <script src="./models/power.js"></script>
+    <script src="./controllers/controller.js"></script>
+</head>
+<body>
+    <div class="coheteContainer">
+        <h2>ROCKETS!</h2>
+        <button class="startBtn" onclick="createRocket()">Create Rockets</button>
+        <div class="columnsSection">
+            <div  class="column1">
+                <div id="column1" class="columns hideRocket">
+                    <div class="divRocket1">
+                        <img class="rocket1Img" src="./assets/rocket1.png">
+                    </div>
+                    <div class="buttonsRocket">
+                        <button onclick="speedBrake(1, 1)">Accelerate Rocket 1</button>
+                        <button onclick="speedBrake(1, 2)">Break Rocket 1</button>
+                    </div>
+                    <div>
+                        <button onclick="printInfoRocket(1)">Print Info Rocket 1</button>
+                        <p class="infoRocket" id="infoRocket1">Rocket 1</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column2">
+                <div id="column2" class="columns hideRocket">
+                    <div class="divRocket2">
+                        <img class="rocket2Img" src="./assets/rocket2.png">
+                    </div>
+                    <div class="buttonsRocket">
+                        <button onclick="speedBrake(2, 1)">Accelerate Rocket 2</button>
+                        <button  onclick="speedBrake(2, 2)">Break Rocket 2</button>
+                    </div> 
+                    <div>
+                        <button onclick="printInfoRocket(2)">Print Info Rocket 2</button>
+                        <p class="infoRocket" id="infoRocket2">Rocket 2</p>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+</body>
+</html>

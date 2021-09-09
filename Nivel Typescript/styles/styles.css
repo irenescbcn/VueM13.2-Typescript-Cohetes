@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: box-sizing;
+}
+
+.coheteContainer{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    color: #2c3e50;
+    background: url('./../assets/space.jpg') no-repeat center/cover;
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+}
+
+h2{
+    color: #fff;
+    margin-top: 30px;
+    font-size: 50px;
+    text-align: center;
+}
+
+.startBtn{
+    background-color: rgba(255, 255, 255, 0.849);
+    color: #082646;
+    padding: 10px 5px;
+    font-size: 18px;
+    width: 200px;
+    margin: auto;
+    margin-top: 1%;
+}
+
+.startBtn:hover{
+    background-color: rgba(233, 238, 240, 0.726);
+}
+
+button{
+    padding: 5px;
+    background: #082646;
+    color: #fff; 
+    border-radius: 5px;
+    border: none;
+    margin: 2px 2px;
+    cursor: pointer;
+    width: 150px;
+}
+
+button:hover{
+    background: #11375F
+}
+
+.rocket1Img, .rocket2Img{
+   width: 150px;
+   height: 150px;
+   display: flex;
+   justify-content: center;
+   align-content: center;
+}
+
+.columnsSection{
+    height: 100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin-bottom: 2%;
+}
+
+.buttonsRocket{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.columns{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-content: center;
+   align-items: center;
+   
+}
+
+.infoRocket{
+    margin-top: 5%;
+    color: #fff;
+    text-align: center;
+}
+
+.hideRocket{
+    opacity: 0;
+}
+
+.showRocket{
+    opacity: 1;
+}
+
+
+@media (max-width: 550px){
+
+    .coheteContainer{
+        width: 100%;
+    }
+
+    .buttonsRocket{
+        flex-direction: column;
+    }
+    
+}
